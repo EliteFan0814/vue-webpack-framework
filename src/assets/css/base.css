@@ -1,0 +1,10 @@
+@font-face {
+  font-family: MyFont;
+  src: url('../font/MaShanZheng-Regular.ttf');
+}
+
+body {
+  color: black;
+  font-family: 'MyFont';
+  background-image: url(../img/avatar.jpg);
+}
