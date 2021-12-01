@@ -4,8 +4,8 @@
   "description": "a basic project framework based on vue",
   "private": true,
   "scripts": {
-    "dev": "webpack serve",
-    "build": "webpack --config webpack.config.js"
+    "dev": "webpack serve --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
   },
   "keywords": [
     "vue"
@@ -20,10 +20,14 @@
     "vue-template-compiler": "^2.6.14",
     "webpack": "^5.64.4",
     "webpack-cli": "^4.9.1",
-    "webpack-dev-server": "^4.6.0"
+    "webpack-dev-server": "^4.6.0",
+    "webpack-merge": "^5.8.0"
   },
   "dependencies": {
     "lodash": "^4.17.21"
   },
-  "sideEffects": false
+  "sideEffects": [
+    "**/*.css",
+    "**/*.scss"
+  ]
 }

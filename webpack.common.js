@@ -25,16 +25,6 @@ module.exports = {
     usedExports: true,
     runtimeChunk: 'single'
   },
-  mode: 'production',
-  devtool: 'inline-source-map',
-  devServer: {
-    static: './dist',
-    historyApiFallback: true,
-    hot: true,
-    compress: true, // gzip压缩
-    port: 3000,
-    open: true //自动打开浏览器
-  },
   module: {
     rules: [
       {
