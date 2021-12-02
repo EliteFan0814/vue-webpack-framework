@@ -1,10 +1,10 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin') // 提取css到单独文件
-
+const { VueLoaderPlugin } = require('vue-loader')
 module.exports = {
   entry: {
-    main: './src/index.js'
+    main: './src/main.js'
   },
   output: {
     filename: '[name].[contenthash].js',
@@ -70,6 +70,10 @@ module.exports = {
             presets: ['@babel/preset-env']
           }
         }
+      },
+      {
+        test: /\.vue$/,
+        loader: 'vue-loader'
       }
     ]
   },
@@ -83,6 +87,7 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
       filename: 'css/[name].[contenthash].css' //重命名输出的css文件，也可不写默认
-    })
+    }),
+    new VueLoaderPlugin()
   ]
 }
