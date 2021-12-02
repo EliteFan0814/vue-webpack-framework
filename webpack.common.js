@@ -32,12 +32,18 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         include: path.resolve(__dirname, 'src'),
-        type: 'asset/resource'
+        type: 'asset/resource',
+        generator: {
+          filename: 'static/img/[hash][ext][query]'
+        }
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         include: path.resolve(__dirname, 'src'),
-        type: 'asset/resource'
+        type: 'asset/resource',
+        generator: {
+          filename: 'static/font/[hash][ext][query]'
+        }
       },
       // 处理scss文件
       {
