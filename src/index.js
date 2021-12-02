@@ -1,4 +1,4 @@
-import './assets/css/base.css'
+import './assets/css/base.scss'
 // import _ from 'lodash'
 import { cube } from './math.js'
 

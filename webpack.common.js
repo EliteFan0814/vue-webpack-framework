@@ -1,5 +1,7 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin') // 提取css到单独文件
+
 module.exports = {
   entry: {
     main: './src/index.js',
@@ -37,10 +39,22 @@ module.exports = {
         include: path.resolve(__dirname, 'src'),
         type: 'asset/resource'
       },
+      // 处理scss文件
       {
-        test: /\.css$/i,
-        include: path.resolve(__dirname, 'src'),
-        use: ['style-loader', 'css-loader']
+        test: /\.(css|s[ac]ss)$/i,
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                plugins: [['postcss-preset-env']]
+              }
+            }
+          },
+          'sass-loader'
+        ]
       }
     ]
   },
@@ -51,6 +65,9 @@ module.exports = {
       filename: 'index.html',
       inject: 'body',
       chunks: ['main']
+    }),
+    new MiniCssExtractPlugin({
+      filename: 'css/[name].css' //重命名输出的css文件，也可不写默认
     })
   ]
 }
