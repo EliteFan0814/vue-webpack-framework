@@ -4,10 +4,27 @@
 }
 
 body {
-  color: black;
   font-family: 'MyFont';
-  background-image: url(../img/avatar.jpg);
-  div {
-    background-color: aqua;
+  #app {
+    background-image: url(../img/utopia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+    .start {
+      position: absolute;
+      top: 30%;
+      right: 25%;
+      transform: translateY(-50%);
+      font-size: 30px;
+      writing-mode: vertical-rl;
+      span {
+        white-space: nowrap;
+        display: inline-block;
+        padding: 10px;
+      }
+    }
   }
 }

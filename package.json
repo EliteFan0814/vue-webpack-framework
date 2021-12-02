@@ -1,7 +1,7 @@
 {
   "name": "vue-project-demo",
   "version": "0.0.1",
-  "description": "a basic project framework based on vue",
+  "description": "a basic project framework",
   "private": true,
   "scripts": {
     "dev": "webpack serve --config webpack.dev.js",
@@ -13,6 +13,9 @@
   "author": "fanpeichao",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "babel-loader": "^8.2.3",
     "css-loader": "^6.5.1",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.4.5",
@@ -29,8 +32,8 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
-    "lodash": "^4.17.21",
-    "postcss-preset-env": "^7.0.1"
+    "postcss-preset-env": "^7.0.1",
+    "reset-css": "^5.0.1"
   },
   "sideEffects": [
     "**/*.css",

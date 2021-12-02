@@ -4,8 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin') // 提取css到�
 
 module.exports = {
   entry: {
-    main: './src/index.js',
-    print: './src/print.js'
+    main: './src/index.js'
   },
   output: {
     filename: '[name].[contenthash].js',
@@ -61,19 +60,29 @@ module.exports = {
           },
           'sass-loader'
         ]
+      },
+      {
+        test: /\.m?js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env']
+          }
+        }
       }
     ]
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: '使用 webpack 构建的 vue 基础框架',
+      title: '使用 webpack5 构建的基础框架',
       template: './public/index.html',
       filename: 'index.html',
       inject: 'body',
       chunks: ['main']
     }),
     new MiniCssExtractPlugin({
-      filename: 'css/[name].css' //重命名输出的css文件，也可不写默认
+      filename: 'css/[name].[contenthash].css' //重命名输出的css文件，也可不写默认
     })
   ]
 }
