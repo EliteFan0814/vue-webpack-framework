@@ -1,6 +1,6 @@
 <template>
   <div id="nav">
-    成功了
+    成功了吗
     <!-- <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link> -->
   </div>
@@ -18,7 +18,7 @@
 
 #nav {
   padding: 30px;
-
+  border: 1px solid red;
   a {
     font-weight: bold;
     color: #2c3e50;
