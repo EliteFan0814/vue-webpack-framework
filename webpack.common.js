@@ -29,6 +29,10 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.(htm|html)$/i,
+        use: ['html-loader']
+      },
+      {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         include: path.resolve(__dirname, 'src'),
         type: 'asset/resource',
@@ -75,7 +79,11 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: '使用 webpack5 构建的基础框架',
+      title: '海外公司注册_一站式服务 | 中细软',
+      keywords:
+        '美国公司注册,英国公司注册,英国公司年审,离岸公司注册,美国开户,离岸公司年审,BVI公司,美国条形码申请,英国条形码申请',
+      description:
+        '中细软创新科技服务平台产业链由IP确权,IP交易,IP管理,IP金融四大板块构成,服务项目多达3000余种,致力于通过网络科技等手段,为全球科技创新提供系统的解决方案与信息服务.',
       template: './public/index.html',
       filename: 'index.html',
       inject: 'body',

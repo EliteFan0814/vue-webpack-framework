@@ -1,6 +1,7 @@
 import 'reset-css'
-import './assets/css/base.scss'
-
-if (process.env.NODE_ENV !== 'production') {
-  console.log('Looks like we are in development mode!')
-}
+// import './assets/css/base.scss'
+import './assets/css/index.scss'
+// import html from "../public/index.html";
+var html = require('../public/index.html')
+// const $ = require('jquery')(window)
+console.log($('.body-wrap'))

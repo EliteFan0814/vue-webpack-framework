@@ -5,9 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="<%= htmlWebpackPlugin.options.keywords %>">
+  <meta name="description" content="<%= htmlWebpackPlugin.options.description %>">
   <title>
     <%= htmlWebpackPlugin.options.title %>
   </title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -15,8 +18,140 @@
     <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
         Please enable it to continue.</strong>
   </noscript>
-  <div id="app">
-    <p class="start"><span>同是天涯沦落人，</span><br /><span>相逢何必曾相识。</span></p>
+  <div class="body-wrap">
+    <div class="banner">
+      <div class="search-wrap">
+        <div class="search-title">
+          <span>中细软 · <span class="title-red">免费</span>核名服务 </span>
+        </div>
+        <ul class="radio-wrap">
+          <li> <label for="america"><input type="radio" id="america" name="country" value="america">美国</label></li>
+          <li> <label for="english"><input type="radio" id="english" name="country" value="english">英国</label></li>
+          <li> <label for="singapore"><input type="radio" id="singapore" name="country" value="singapore">新加坡</label>
+          </li>
+          <li> <label for="japanese"><input type="radio" id="japanese" name="country" value="japanese">日本</label></li>
+          <li> <label for="germany"><input type="radio" id="germany" name="country" value="germany">德国</label></li>
+          <li> <label for="cayman"><input type="radio" id="cayman" name="country" value="cayman">开曼群岛</label></li>
+          <li> <label for="BVI"><input type="radio" id="BVI" name="country" value="BVI">BVI</label></li>
+          <li> <label for="other"><input type="radio" id="other" name="country" value="other">其他</label></li>
+        </ul>
+        <div class="input-wrap">
+          <div class="search">
+            <div class="search-input">
+              <input type="text" placeholder="请输入要查询的海外公司名称，如中细软">
+            </div>
+            <button>获取核名结果</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="universal-wrap">
+      <img class="universal-img" src="../src/assets/img/universal.png" alt="">
+      <ul class="img-list">
+        <li>
+          <div class="item-rwap">
+            <img src="https://dummyimage.com/298x220/000/fff" alt="">
+            <div class="img-title">
+              <span>美国<br />USA</span>
+            </div>
+            <div class="hover-status">
+              <p>费用低，资料简单<br />名称自由</p>
+              <div class="regist-btn">注册费用咨询 -&gt;</div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-rwap">
+            <img src="https://dummyimage.com/298x220/000/fff" alt="">
+            <div class="img-title">
+              <span>美国<br />USA</span>
+            </div>
+            <div class="hover-status">
+              <p>费用低，资料简单<br />名称自由</p>
+              <div class="regist-btn">注册费用咨询 -&gt;</div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-rwap">
+            <img src="https://dummyimage.com/298x220/000/fff" alt="">
+            <div class="img-title">
+              <span>美国<br />USA</span>
+            </div>
+            <div class="hover-status">
+              <p>费用低，资料简单<br />名称自由</p>
+              <div class="regist-btn">注册费用咨询 -&gt;</div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-rwap">
+            <img src="https://dummyimage.com/298x220/000/fff" alt="">
+            <div class="img-title">
+              <span>美国<br />USA</span>
+            </div>
+            <div class="hover-status">
+              <p>费用低，资料简单<br />名称自由</p>
+              <div class="regist-btn">注册费用咨询 -&gt;</div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-rwap">
+            <img src="https://dummyimage.com/298x220/000/fff" alt="">
+            <div class="img-title">
+              <span>美国<br />USA</span>
+            </div>
+            <div class="hover-status">
+              <p>费用低，资料简单<br />名称自由</p>
+              <div class="regist-btn">注册费用咨询 -&gt;</div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-rwap">
+            <img src="https://dummyimage.com/298x220/000/fff" alt="">
+            <div class="img-title">
+              <span>美国<br />USA</span>
+            </div>
+            <div class="hover-status">
+              <p>费用低，资料简单<br />名称自由</p>
+              <div class="regist-btn">注册费用咨询 -&gt;</div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-rwap">
+            <img src="https://dummyimage.com/298x220/000/fff" alt="">
+            <div class="img-title">
+              <span>美国<br />USA</span>
+            </div>
+            <div class="hover-status">
+              <p>费用低，资料简单<br />名称自由</p>
+              <div class="regist-btn">注册费用咨询 -&gt;</div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-rwap">
+            <img src="https://dummyimage.com/298x220/000/fff" alt="">
+            <div class="img-title">
+              <span>美国<br />USA</span>
+            </div>
+            <div class="hover-status">
+              <p>费用低，资料简单<br />名称自由</p>
+              <div class="regist-btn">注册费用咨询 -&gt;</div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="universal-tips frame">
+        * 因每个国家政策与申请费用会实时变动，最终价格以咨询为准
+      </div>
+      <div class="btn-wrap">
+        <button class="base-button">其他国家咨询</button>
+      </div>
+    </div>
   </div>
 </body>
 
