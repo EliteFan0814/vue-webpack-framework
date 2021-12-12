@@ -11,6 +11,9 @@
     <%= htmlWebpackPlugin.options.title %>
   </title>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- <script src="../src/assets/js/swiper-bundle.min.js"></script> -->
+  <!-- <link rel="stylesheet" href="../src/assets/js/swiper-bundle.min.css"> -->
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">  -->
 </head>
 
 <body>
@@ -19,6 +22,7 @@
         Please enable it to continue.</strong>
   </noscript>
   <div class="body-wrap">
+    <!-- banner和搜索 -->
     <div class="banner">
       <div class="search-wrap">
         <div class="search-title">
@@ -43,10 +47,17 @@
             <button>获取核名结果</button>
           </div>
         </div>
+        <img class="base-arrow" src="../src/assets/img/arrow.png" alt="">
       </div>
     </div>
+    <!-- 全球热门国家 -->
     <div class="universal-wrap">
-      <img class="universal-img" src="../src/assets/img/universal.png" alt="">
+      <div class="base-title">
+        <img class="title-1 countries" src="../src/assets/img/countries.png" alt="">
+        <span class="title-2">全球<span class="base-red">热门</span>国家/地区公司注册</span>
+        <span class="title-3">足不出户，即可申请海外公司，抢先占据竞争优势</span>
+      </div>
+      <!-- <img class="universal-img" src="../src/assets/img/universal.png" alt=""> -->
       <ul class="img-list">
         <li>
           <div class="item-rwap">
@@ -152,7 +163,366 @@
         <button class="base-button">其他国家咨询</button>
       </div>
     </div>
+    <!-- 海外服务 -->
+    <div class="oversea-wrap">
+      <div class="base-title">
+        <img class="title-1" src="../src/assets/img/service.png" alt="">
+        <span class="title-2">海外企业服务，<span class="base-red">一站式</span>解决方案</span>
+        <span class="title-3">海外公司相关服务，无需亲赴，快速办理</span>
+      </div>
+      <div class="handle-wrap">
+        <div class="handle-l">
+          <div class="handle-item">
+            <div class="title-wrap">
+              <img src="https://dummyimage.com/340x121/000/000" alt="">
+              <span class="title">海外公司注册/年审</span>
+            </div>
+            <div class="content">
+              <p>各国公司年审时间均不同<br>
+                未按时年审逾期将会产生罚款
+              </p>
+              <a href="">公司名称核名 -&gt;</a>
+            </div>
+          </div>
+          <div class="handle-item">
+            <div class="title-wrap">
+              <img src="https://dummyimage.com/340x121/000/000" alt="">
+              <span class="title">海外条形码业务</span>
+            </div>
+            <div class="content">
+              <p>包括申请和续费<br>
+                由物品编码协会统一发配编码
+              </p>
+              <a href="">办理条件查询 -&gt;</a>
+            </div>
+          </div>
+          <div class="handle-item">
+            <div class="title-wrap">
+              <img src="https://dummyimage.com/340x121/000/000" alt="">
+              <span class="title">境外律师公认证</span>
+            </div>
+            <div class="content">
+              <p>各类境外公认证办理，包括但不限于外资<br>
+                控股国内公司、商标转让、诉讼主体公证等
+              </p>
+              <a href="">认证价格咨询 -&gt;</a>
+            </div>
+          </div>
+          <div class="handle-item">
+            <div class="title-wrap">
+              <img src="https://dummyimage.com/340x121/000/000" alt="">
+              <span class="title">境外银行开户</span>
+            </div>
+            <div class="content">
+              <p>主流银行全覆盖<br>
+                包括境外个人账户、公司对公账户
+              </p>
+              <a href="">开户资格审核 -&gt;</a>
+            </div>
+          </div>
+        </div>
+        <div class="handle-r">
+          <div class="title-wrap">
+            <div class="title">
+              <span class="build">
+                <img src="../src/assets/img/build.png" alt="">
+              </span>
+              <span class="title-text">更多海外公司服务</span>
+            </div>
+          </div>
+          <div class="form-wrap">
+            <form>
+              <div class="check-box">
+                <label class="selected" for="0"><input type="checkbox" name="handle-assess" id="0"
+                    value="0">海外公司注销</label>
+                <label for="1"><input type="checkbox" name="handle-assess" id="1" value="1">境外证明开具</label>
+                <label for="1"><input type="checkbox" name="handle-assess" id="1" value="1">亚马逊店铺入驻</label>
+                <label class="selected" for="0"><input type="checkbox" name="handle-assess" id="0"
+                    value="0">税号办理</label>
+                <label class="selected" for="0"><input type="checkbox" name="handle-assess" id="0"
+                    value="0">会计师审</label>
+                <label class="selected" for="0"><input type="checkbox" name="handle-assess" id="0"
+                    value="0">会计师核证CPA</label>
+                <label class="selected" for="0"><input type="checkbox" name="handle-assess" id="0"
+                    value="0">进出口牌照办理</label>
+                <label class="selected" for="0"><input type="checkbox" name="handle-assess" id="0"
+                    value="0">房产相关业务</label>
+                <label class="selected" for="0"><input type="checkbox" name="handle-assess" id="0"
+                    value="0">著录事项变更</label>
+                <label class="selected" for="0"><input type="checkbox" name="handle-assess" id="0"
+                    value="0">证件办理</label>
+                <label class="selected" for="0"><input type="checkbox" name="handle-assess" id="0"
+                    value="0">公司异常状态恢复</label>
+                <label class="selected" for="0"><input type="checkbox" name="handle-assess" id="0"
+                    value="0">境外报到投资登记</label>
+              </div>
+              <div class="input">
+                <span class="base-red">*</span>
+                <div class="input-wrap">
+                  <input class="base-input" type="text" placeholder="请输入您的手机号，获取评估结果" id="single-input">
+                </div>
+              </div>
+            </form>
+            <div class="btn-wrap">
+              <button class="base-button">办理条件评估</button>
+            </div>
+            <div class="little-tips">* 个别业务仅支持部分国家办理，以咨询结果为准</div>
+          </div>
+        </div>
+      </div>
+      <img class="base-arrow" src="../src/assets/img/arrow.png" alt="">
+    </div>
+    <!-- 标准化服务 -->
+    <div class="standard-wrap">
+      <div class="base-title">
+        <img class="title-1" src="../src/assets/img/Standardization.png" alt="">
+        <span class="title-2">中细软，提供国际业务<span class="base-red">标准化</span>服务体系</span>
+        <span class="title-3">服务体系覆盖售前、售中、售后全部环节</span>
+      </div>
+      <div class="flow-wrap">
+        <div class="flow-item">
+          <div class="flow-title">
+            <img src="../src/assets/img/pre-sales.png" alt="">
+            <div class="title-text">
+              <span><span class="base-red">售前</span>服务</span><br>
+              <span>Pre sales service</span>
+            </div>
+          </div>
+          <ul class="flow-list">
+            <li>• 免费核名，提供查询报告；</li>
+            <li>• 结合实际需求，提供专属方案；</li>
+            <li>• 全程协助，整理提交材料；</li>
+          </ul>
+        </div>
+        <img class="flow-arrow" src="../src/assets/img/arrow2.png" alt="">
+        <div class="flow-item">
+          <div class="flow-title">
+            <img src="../src/assets/img/pre-sales.png" alt="">
+            <div class="title-text">
+              <span><span class="base-red">售中</span>服务</span><br>
+              <span>On sale service</span>
+            </div>
+          </div>
+          <ul class="flow-list">
+            <li>• 依据各国规定，审核注册资料；</li>
+            <li>• 递交申请，全部对接正规持牌机构；</li>
+            <li>• 实时跟踪，中细软全程监控案件状态；</li>
+          </ul>
+        </div>
+        <img class="flow-arrow" src="../src/assets/img/arrow2.png" alt="">
+        <div class="flow-item">
+          <div class="flow-title">
+            <img src="../src/assets/img/pre-sales.png" alt="">
+            <div class="title-text">
+              <span><span class="base-red">售后</span>服务</span><br>
+              <span>After-sale service</span>
+            </div>
+          </div>
+          <ul class="flow-list">
+            <li>• 随时回复，确保企业正常运行；</li>
+            <li>• 及时转交，注册证书等官方文件；</li>
+            <li>• 关注状态，提供年审提醒等后续服务；</li>
+          </ul>
+        </div>
+      </div>
+      <div class="btn-wrap">
+        <button class="base-button">涉外服务咨询</button>
+      </div>
+    </div>
+    <!-- 律师服务 -->
+    <div class="lawyer-wrap">
+      <div class="base-title">
+        <img class="title-1" src="../src/assets/img/Lawyers.png" alt="">
+        <span class="title-2">涉外<span class="base-red">律师及专家</span>团队</span>
+        <span class="title-3">专业律师团队、涉外专家为您答疑</span>
+      </div>
+      <div class="my-swiper">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="lawyer">
+                <img src="../src/assets/img/01.png" alt="">
+                <div class="content">
+                  <div class="name">苏斌</div>
+                  <div class="introduction">
+                    <span class="int-begin">擅长领域：</span><br>
+                    <span>涉外知识产权保护与布局等。</span>
+                  </div>
+                </div>
+              </div>
+              <div class="lawyer">
+                <img src="../src/assets/img/02.png" alt="">
+                <div class="content">
+                  <div class="name">宋琴</div>
+                  <div class="introduction">
+                    <span class="int-begin">擅长领域：</span><br>
+                    <span>海外公司相关业务、</span><br>
+                    <span>国际商标业务、</span><br>
+                    <span>国际品牌建设规划等。</span>
+                  </div>
+                </div>
+              </div>
+              <div class="lawyer">
+                <img src="../src/assets/img/03.png" alt="">
+                <div class="content">
+                  <div class="name">郑和平</div>
+                  <div class="introduction">
+                    <span class="int-begin">擅长领域：</span><br>
+                    <span>国际商标申报/驳回复审、</span><br>
+                    <span>国际商标申报/异议答辩/撤销、无效侵权商标等。</span>
+                  </div>
+                </div>
+              </div>
+              <div class="lawyer">
+                <img src="../src/assets/img/04.png" alt="">
+                <div class="content">
+                  <div class="name">贺帅</div>
+                  <div class="introduction">
+                    <span class="int-begin">擅长领域：</span><br>
+                    <span>国际业务有偿转让谈判、</span><br>
+                    <span>流程监控与优化、</span><br>
+                    <span>商标确权监控与运营实务等。</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="lawyer">
+                <img src="../src/assets/img/01.png" alt="">
+                <div class="content">
+                  <div class="name">苏斌</div>
+                  <div class="introduction">
+                    <span class="int-begin">擅长领域：</span><br>
+                    <span>涉外知识产权保护与布局等。</span>
+                  </div>
+                </div>
+              </div>
+              <div class="lawyer">
+                <img src="../src/assets/img/02.png" alt="">
+                <div class="content">
+                  <div class="name">宋琴</div>
+                  <div class="introduction">
+                    <span class="int-begin">擅长领域：</span><br>
+                    <span>海外公司相关业务、</span><br>
+                    <span>国际商标业务、</span><br>
+                    <span>国际品牌建设规划等。</span>
+                  </div>
+                </div>
+              </div>
+              <div class="lawyer">
+                <img src="../src/assets/img/03.png" alt="">
+                <div class="content">
+                  <div class="name">郑和平</div>
+                  <div class="introduction">
+                    <span class="int-begin">擅长领域：</span><br>
+                    <span>国际商标申报/驳回复审、</span><br>
+                    <span>国际商标申报/异议答辩/撤销、无效侵权商标等。</span>
+                  </div>
+                </div>
+              </div>
+              <div class="lawyer">
+                <img src="../src/assets/img/04.png" alt="">
+                <div class="content">
+                  <div class="name">贺帅</div>
+                  <div class="introduction">
+                    <span class="int-begin">擅长领域：</span><br>
+                    <span>国际业务有偿转让谈判、</span><br>
+                    <span>流程监控与优化、</span><br>
+                    <span>商标确权监控与运营实务等。</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="lawyer">
+                <img src="../src/assets/img/01.png" alt="">
+                <div class="content">
+                  <div class="name">苏斌</div>
+                  <div class="introduction">
+                    <span class="int-begin">擅长领域：</span><br>
+                    <span>涉外知识产权保护与布局等。</span>
+                  </div>
+                </div>
+              </div>
+              <div class="lawyer">
+                <img src="../src/assets/img/02.png" alt="">
+                <div class="content">
+                  <div class="name">宋琴</div>
+                  <div class="introduction">
+                    <span class="int-begin">擅长领域：</span><br>
+                    <span>海外公司相关业务、</span><br>
+                    <span>国际商标业务、</span><br>
+                    <span>国际品牌建设规划等。</span>
+                  </div>
+                </div>
+              </div>
+              <div class="lawyer">
+                <img src="../src/assets/img/03.png" alt="">
+                <div class="content">
+                  <div class="name">郑和平</div>
+                  <div class="introduction">
+                    <span class="int-begin">擅长领域：</span><br>
+                    <span>国际商标申报/驳回复审、</span><br>
+                    <span>国际商标申报/异议答辩/撤销、无效侵权商标等。</span>
+                  </div>
+                </div>
+              </div>
+              <div class="lawyer">
+                <img src="../src/assets/img/04.png" alt="">
+                <div class="content">
+                  <div class="name">贺帅</div>
+                  <div class="introduction">
+                    <span class="int-begin">擅长领域：</span><br>
+                    <span>国际业务有偿转让谈判、</span><br>
+                    <span>流程监控与优化、</span><br>
+                    <span>商标确权监控与运营实务等。</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <div class="btn-wrap">
+        <button class="base-button">在线咨询</button>
+      </div>
+    </div>
+    <!-- 海外常见注册问题 -->
+    <div class="regist-wrap">
+      <div class="base-title">
+        <img class="title-1" src="../src/assets/img/problem.png" alt="">
+        <span class="title-2">海外公司注册<span class="base-red">常见问题</span></span>
+        <span class="title-3">涉外公司常见问题及最受关注的国家政策解读</span>
+      </div>
+      <div class="reg-content">
+        <div class="left">
+          <ul class="left-list">
+            <li><span class="base-red">• </span>海外公司都有哪些热门地区/国家？</li>
+            <li><span class="base-red">• </span>注册海外公司都有什么哪些好处？</li>
+            <li><span class="base-red">• </span>注册日本公司需要股东亲自到场吗？</li>
+            <li><span class="base-red">• </span>注册英国公司必须每年要维护吗？</li>
+          </ul>
+          <ul class="left-list">
+            <li><span class="base-red">• </span>海外公司都有哪些热门地区/国家？</li>
+            <li><span class="base-red">• </span>注册海外公司都有什么哪些好处？</li>
+            <li><span class="base-red">• </span>注册日本公司需要股东亲自到场吗？</li>
+            <li><span class="base-red">• </span>注册英国公司必须每年要维护吗？</li>
+          </ul>
+        </div>
+        <div class="right">
+          <span>在线答疑，涉外专家1v1服务</span>
+          <textarea rows="3" cols="20" placeholder="请输入您的问题">
+
+            </textarea>
+        </div>
+      </div>
+      <img class="base-arrow" src="../src/assets/img/arrow.png" alt="">
+
+    </div>
   </div>
+
 </body>
 
 </html>
