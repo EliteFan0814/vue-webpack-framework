@@ -711,6 +711,9 @@ img {
             &:last-child {
               border-bottom: none;
             }
+            &:hover {
+              cursor: pointer;
+            }
           }
         }
       }
@@ -790,7 +793,7 @@ img {
     background-size: cover;
     background-position: center;
     padding-top: 54px;
-    padding-bottom: 90px;
+    // padding-bottom: 90px;
     margin-bottom: 50px;
     height: 680px;
     .base-title {

@@ -1,4 +1,3 @@
-import { show } from 'dom7'
 import 'reset-css'
 import './assets/css/index.scss'
 import './assets/js/swiper-bundle.min.css'
@@ -158,6 +157,17 @@ $(function () {
     } else {
       alert('请输入正确手机号')
     }
+  })
+  $('#make-question').on('click', function () {
+    freeChargeValuePhone = $('input[name="online-value-phone"]').val()
+    const isPhone = isPoneAvailable(freeChargeValuePhone)
+    if (isPhone) {
+      $('.mask').show()
+      $('.submit-success').show()
+    } else {
+      alert('请输入正确手机号')
+    }
+    // console.log($('#your-problem').val())
   })
 })
 // 轮播图
