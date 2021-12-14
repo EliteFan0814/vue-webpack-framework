@@ -117,7 +117,14 @@ $(function () {
         .find('a')
         .on('click', function (e) {
           e.preventDefault()
+          const type = $(this).attr('data-type')
           const title = $(this).parent().parent().find('.title-wrap .title').text()
+          // 如果 type = 1 则没有公司名称
+          if (type === '1') {
+            $('.oversea-charge').find('.comp-name').hide()
+          } else {
+            $('.oversea-charge').find('.comp-name').show()
+          }
           $('.oversea-charge').find('.slogan').text(title)
           $('.mask').show()
           $('.oversea-charge').show()
@@ -149,13 +156,14 @@ $(function () {
       })
     })
   $('#access-valuation').on('click', function () {
-    freeChargeValuePhone = $('#access-valuation-phone').val()
+    freeChargeValuePhone = $('input[name="access-valuation-phone"]').val()
     const isPhone = isPoneAvailable(freeChargeValuePhone)
     if (isPhone) {
       $('.mask').show()
       $('.submit-success').show()
+      $('.access-error').hide()
     } else {
-      alert('请输入正确手机号')
+      $('.access-error').show()
     }
   })
   $('#make-question').on('click', function () {
@@ -164,10 +172,34 @@ $(function () {
     if (isPhone) {
       $('.mask').show()
       $('.submit-success').show()
+      $('.online-error').hide()
     } else {
-      alert('请输入正确手机号')
+      $('.online-error').show()
     }
-    // console.log($('#your-problem').val())
+  })
+  $('.success-tab').each(function () {
+    $(this).on('click', function () {
+      $('.success-tab').each(function () {
+        $(this).removeClass('tab-active')
+      })
+      $(this).addClass('tab-active')
+      // alert(index)
+      // $('.success-imgs').each(function (innerindex) {
+      //   if (index === innerindex) {
+      //     $(this).attr('style', 'display:flex')
+      //   } else {
+      //     $(this).hide()
+      //   }
+      // })
+    })
+  })
+  $('.inter-tab').on('click', function () {
+    $('.inter-imgs').attr('style', 'display:flex')
+    $('.oversea-imgs').hide()
+  })
+  $('.oversea-tab').on('click', function () {
+    $('.oversea-imgs').attr('style', 'display:flex')
+    $('.inter-imgs').hide()
   })
 })
 // 轮播图
