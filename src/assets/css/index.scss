@@ -85,6 +85,7 @@ img {
   }
 }
 .base-input {
+  font-size: 14px;
   padding-left: 10px;
   box-sizing: border-box;
   box-shadow: none; /*去除阴影*/
@@ -100,6 +101,11 @@ img {
     color: #bbbbbb;
   }
 }
+.base-input-dialog {
+  &::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+}
 .base-search {
   display: flex;
   width: 810px;
@@ -112,7 +118,9 @@ img {
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.04);
     border-radius: 4px 0px 0px 4px;
     border: solid 2px #f86463;
+    font-size: 16px;
     input {
+      font-size: 16px;
       padding-left: 10px;
       height: 50px;
       width: 90%;
@@ -169,6 +177,9 @@ img {
   font-stretch: normal;
   letter-spacing: 0px;
   color: #333333;
+  form {
+    width: auto;
+  }
   .banner {
     width: 100%;
     height: 540px;
@@ -426,6 +437,9 @@ img {
               font-size: 16px;
               letter-spacing: 0px;
               color: #ed4d4a;
+              img {
+                display: inline-block;
+              }
             }
           }
         }
@@ -722,8 +736,8 @@ img {
         display: flex;
         .left-list {
           box-sizing: border-box;
-          background-color: #1b015a;
-          opacity: 0.8;
+          background-color: rgba(27, 1, 90, 0.8);
+          // opacity: 0.8;
           width: 363px;
           padding: 15px 20px;
           &:first-child {
@@ -735,13 +749,27 @@ img {
             font-size: 16px;
             line-height: 66px;
             letter-spacing: 0px;
-            opacity: 0.8;
-            border-bottom: 1px dotted #fff;
+            // opacity: 0.8;
+            border-bottom: 1px dashed #fff;
             &:last-child {
               border-bottom: none;
             }
             &:hover {
               cursor: pointer;
+              color: #fff;
+              // text-decoration: underline;
+              font-weight: bold;
+            }
+          }
+          a {
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+            &:hover,
+            &:link,
+            &:visited,
+            &:active {
+              text-decoration: none;
             }
           }
         }
@@ -916,6 +944,9 @@ img {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 10;
+  form {
+    width: auto;
+  }
   .base-dialog {
     display: none;
     background-color: #fff;
@@ -986,6 +1017,9 @@ img {
         }
         .select-wrap {
           position: relative;
+          input::-webkit-input-placeholder {
+            font-size: 14px;
+          }
           select {
             width: 277px;
             appearance: none;

@@ -9,7 +9,7 @@ module.exports = merge(common, {
     historyApiFallback: true,
     hot: true,
     compress: true, // gzip压缩
-    port: 3000,
+    port: 4000,
     open: true //自动打开浏览器
   }
 })

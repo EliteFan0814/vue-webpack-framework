@@ -10,7 +10,7 @@
   <title>
     <%= htmlWebpackPlugin.options.title %>
   </title>
-  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+  <!-- <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.7.2/jquery.min.js"></script> -->
   <!-- <script src="../src/assets/js/swiper-bundle.min.js"></script> -->
   <!-- <link rel="stylesheet" href="../src/assets/js/swiper-bundle.min.css"> -->
   <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">  -->
@@ -30,14 +30,14 @@
         </div>
         <form class="radio-wrap">
           <div class="check-box" id="select-radio">
-            <label for="1"><input type="radio" name="country" id="0" value="1">美国</label>
-            <label for="2"><input type="radio" name="country" id="1" value="2">英国</label>
-            <label for="3"><input type="radio" name="country" id="2" value="3">新加坡</label>
-            <label for="4"><input type="radio" name="country" id="3" value="4">日本</label>
-            <label for="5"><input type="radio" name="country" id="4" value="5">德国</label>
-            <label for="6"><input type="radio" name="country" id="5" value="6">开曼群岛</label>
-            <label for="7"><input type="radio" name="country" id="6" value="7">BVI</label>
-            <label for="8"><input type="radio" name="country" id="7" value="0">其他</label>
+            <label for="1" class="selected"><input type="radio" name="country" id="0" value="美国">美国</label>
+            <label for="2"><input type="radio" name="country" id="1" value="英国">英国</label>
+            <label for="3"><input type="radio" name="country" id="2" value="新加坡">新加坡</label>
+            <label for="4"><input type="radio" name="country" id="3" value="日本">日本</label>
+            <label for="5"><input type="radio" name="country" id="4" value="德国">德国</label>
+            <label for="6"><input type="radio" name="country" id="5" value="开曼群岛">开曼群岛</label>
+            <label for="7"><input type="radio" name="country" id="6" value="BVI">BVI</label>
+            <label for="8"><input type="radio" name="country" id="7" value="其他国家/地区">其他</label>
           </div>
         </form>
         <div class="input-wrap">
@@ -68,7 +68,7 @@
             </div>
             <div class="hover-status">
               <p>视频开户无需亲赴，名称自由<br />流程简单</p>
-              <div class="regist-btn" data-value="1">注册费用咨询 -&gt;</div>
+              <div class="regist-btn" data-value="美国">注册费用咨询 -&gt;</div>
             </div>
           </div>
         </li>
@@ -80,7 +80,7 @@
             </div>
             <div class="hover-status">
               <p>费用低，资料简单<br />名称自由</p>
-              <div class="regist-btn" data-value="2">注册费用咨询 -&gt;</div>
+              <div class="regist-btn" data-value="英国">注册费用咨询 -&gt;</div>
             </div>
           </div>
         </li>
@@ -92,7 +92,7 @@
             </div>
             <div class="hover-status">
               <p>包括公司注册、银行开户<br />年审、报税、注销等</p>
-              <div class="regist-btn" data-value="3">注册费用咨询 -&gt;</div>
+              <div class="regist-btn" data-value="新加坡">注册费用咨询 -&gt;</div>
             </div>
           </div>
         </li>
@@ -104,7 +104,7 @@
             </div>
             <div class="hover-status">
               <p>无需亲赴办理，经营范围广<br />品牌宣传及授权良选</p>
-              <div class="regist-btn" data-value="4">注册费用咨询 -&gt;</div>
+              <div class="regist-btn" data-value="日本">注册费用咨询 -&gt;</div>
             </div>
           </div>
         </li>
@@ -116,7 +116,7 @@
             </div>
             <div class="hover-status">
               <p>含对公账户办理，无需亲赴<br />可实际经营</p>
-              <div class="regist-btn" data-value="5">注册费用咨询 -&gt;</div>
+              <div class="regist-btn" data-value="德国">注册费用咨询 -&gt;</div>
             </div>
           </div>
         </li>
@@ -128,7 +128,7 @@
             </div>
             <div class="hover-status">
               <p>利于开展跨国业务<br />酒类品牌宣传良选</p>
-              <div class="regist-btn" data-value="17">注册费用咨询 -&gt;</div>
+              <div class="regist-btn" data-value="法国">注册费用咨询 -&gt;</div>
             </div>
           </div>
         </li>
@@ -140,7 +140,7 @@
             </div>
             <div class="hover-status">
               <p>贸易自由，无外汇管制<br />无需验资或缴纳税项</p>
-              <div class="regist-btn" data-value="6">注册费用咨询 -&gt;</div>
+              <div class="regist-btn" data-value="开曼群岛">注册费用咨询 -&gt;</div>
             </div>
           </div>
         </li>
@@ -152,7 +152,7 @@
             </div>
             <div class="hover-status">
               <p>税贸易环境稳定，外贸合理避税<br />金融法律良好</p>
-              <div class="regist-btn" data-value="7">注册费用咨询 -&gt;</div>
+              <div class="regist-btn" data-value="BVI">注册费用咨询 -&gt;</div>
             </div>
           </div>
         </li>
@@ -183,7 +183,7 @@
               <p>各国公司年审时间均不同<br>
                 未按时年审逾期将会产生罚款
               </p>
-              <a href="" data-type="0">公司名称核名 -&gt;</a>
+              <a href="" data-type="0">公司名称核名 <img src="../src/assets/img/right.png" alt=""></a>
             </div>
           </div>
           <div class="handle-item">
@@ -196,7 +196,7 @@
               <p>包括申请和续费<br>
                 由物品编码协会统一发配编码
               </p>
-              <a href="" data-type="1">办理条件查询 -&gt;</a>
+              <a href="" data-type="1">办理条件查询 <img src="../src/assets/img/right.png" alt=""></a>
             </div>
           </div>
           <div class="handle-item">
@@ -209,7 +209,7 @@
               <p>各类境外公认证办理，包括但不限于外资<br>
                 控股国内公司、商标转让、诉讼主体公证等
               </p>
-              <a href="" data-type="1">认证价格咨询 -&gt;</a>
+              <a href="" data-type="1">认证价格咨询 <img src="../src/assets/img/right.png" alt=""></a>
             </div>
           </div>
           <div class="handle-item">
@@ -222,7 +222,7 @@
               <p>主流银行全覆盖<br>
                 包括境外个人账户、公司对公账户
               </p>
-              <a href="" data-type="1">开户资格审核 -&gt;</a>
+              <a href="" data-type="1">开户资格审核 <img src="../src/assets/img/right.png" alt=""></a>
             </div>
           </div>
         </div>
@@ -238,18 +238,18 @@
           <div class="form-wrap">
             <form>
               <div class="check-box" id="oversea-checkbox">
-                <label for="0"><input type="checkbox" name="handle-assess" id="0" value="0">海外公司注销</label>
-                <label for="1"><input type="checkbox" name="handle-assess" id="1" value="1">境外证明开具</label>
-                <label for="1"><input type="checkbox" name="handle-assess" id="1" value="1">亚马逊店铺入驻</label>
-                <label for="0"><input type="checkbox" name="handle-assess" id="0" value="0">税号办理</label>
-                <label for="0"><input type="checkbox" name="handle-assess" id="0" value="0">会计师审</label>
-                <label for="0"><input type="checkbox" name="handle-assess" id="0" value="0">会计师核证CPA</label>
-                <label for="0"><input type="checkbox" name="handle-assess" id="0" value="0">进出口牌照办理</label>
-                <label for="0"><input type="checkbox" name="handle-assess" id="0" value="0">房产相关业务</label>
-                <label for="0"><input type="checkbox" name="handle-assess" id="0" value="0">著录事项变更</label>
-                <label for="0"><input type="checkbox" name="handle-assess" id="0" value="0">证件办理</label>
-                <label for="0"><input type="checkbox" name="handle-assess" id="0" value="0">公司异常状态恢复</label>
-                <label for="0"><input type="checkbox" name="handle-assess" id="0" value="0">境外报到投资登记</label>
+                <label for="h0"><input type="checkbox" name="handle-assess" id="h0" value="海外公司注销">海外公司注销</label>
+                <label for="h1"><input type="checkbox" name="handle-assess" id="h1" value="境外证明开具">境外证明开具</label>
+                <label for="h2"><input type="checkbox" name="handle-assess" id="h2" value="亚马逊店铺入驻">亚马逊店铺入驻</label>
+                <label for="h3"><input type="checkbox" name="handle-assess" id="h3" value="税号办理">税号办理</label>
+                <label for="h4"><input type="checkbox" name="handle-assess" id="h4" value="会计师审">会计师审</label>
+                <label for="h5"><input type="checkbox" name="handle-assess" id="h5" value="会计师核证CPA">会计师核证CPA</label>
+                <label for="h6"><input type="checkbox" name="handle-assess" id="h6" value="进出口牌照办理">进出口牌照办理</label>
+                <label for="h7"><input type="checkbox" name="handle-assess" id="h7" value="房产相关业务">房产相关业务</label>
+                <label for="h8"><input type="checkbox" name="handle-assess" id="h8" value="著录事项变更">著录事项变更</label>
+                <label for="h9"><input type="checkbox" name="handle-assess" id="h9" value="证件办理">证件办理</label>
+                <label for="h10"><input type="checkbox" name="handle-assess" id="h10" value="公司异常状态恢复">公司异常状态恢复</label>
+                <label for="h11"><input type="checkbox" name="handle-assess" id="h11" value="境外报到投资登记">境外报到投资登记</label>
               </div>
               <div class="input">
                 <span class="base-red">*</span>
@@ -598,23 +598,24 @@
           <div class="select-wrap">
             <select id="free-charge-select">
               <option value="">请选择</option>
-              <option value="1">美国</option>
-              <option value="2">英国</option>
-              <option value="3">新加坡</option>
-              <option value="4">日本</option>
-              <option value="5">德国</option>
-              <option value="6">开曼群岛</option>
-              <option value="7">BVI</option>
-              <option value="8">加拿大</option>
-              <option value="9">泰国</option>
-              <option value="10">马绍尔</option>
-              <option value="11">伯利兹</option>
-              <option value="12">萨摩亚</option>
-              <option value="13">塞舌尔</option>
-              <option value="14">贝里斯</option>
-              <option value="15">澳大利亚</option>
-              <option value="16">马来西亚</option>
-              <option value="0">其他国家、地区</option>
+              <option value="美国">美国</option>
+              <option value="英国">英国</option>
+              <option value="新加坡">新加坡</option>
+              <option value="日本">日本</option>
+              <option value="德国">德国</option>
+              <option value="法国">法国</option>
+              <option value="开曼群岛">开曼群岛</option>
+              <option value="BVI">BVI</option>
+              <option value="加拿大">加拿大</option>
+              <option value="泰国">泰国</option>
+              <option value="马绍尔">马绍尔</option>
+              <option value="伯利兹">伯利兹</option>
+              <option value="萨摩亚">萨摩亚</option>
+              <option value="塞舌尔">塞舌尔</option>
+              <option value="贝里斯">贝里斯</option>
+              <option value="澳大利亚">澳大利亚</option>
+              <option value="马来西亚">马来西亚</option>
+              <option value="其他国家/地区">其他国家/地区</option>
             </select>
             <img src="../src/assets/img/Triangle.png" alt="">
           </div>
@@ -652,24 +653,24 @@
           <div class="select-wrap">
             <select id="universal-select">
               <option value="">请选择</option>
-              <option value="1">美国</option>
-              <option value="2">英国</option>
-              <option value="3">新加坡</option>
-              <option value="4">日本</option>
-              <option value="5">德国</option>
-              <option value="17">法国</option>
-              <option value="6">开曼群岛</option>
-              <option value="7">BVI</option>
-              <option value="8">加拿大</option>
-              <option value="9">泰国</option>
-              <option value="10">马绍尔</option>
-              <option value="11">伯利兹</option>
-              <option value="12">萨摩亚</option>
-              <option value="13">塞舌尔</option>
-              <option value="14">贝里斯</option>
-              <option value="15">澳大利亚</option>
-              <option value="16">马来西亚</option>
-              <option value="0">其他国家、地区</option>
+              <option value="美国">美国</option>
+              <option value="英国">英国</option>
+              <option value="新加坡">新加坡</option>
+              <option value="日本">日本</option>
+              <option value="德国">德国</option>
+              <option value="法国">法国</option>
+              <option value="开曼群岛">开曼群岛</option>
+              <option value="BVI">BVI</option>
+              <option value="加拿大">加拿大</option>
+              <option value="泰国">泰国</option>
+              <option value="马绍尔">马绍尔</option>
+              <option value="伯利兹">伯利兹</option>
+              <option value="萨摩亚">萨摩亚</option>
+              <option value="塞舌尔">塞舌尔</option>
+              <option value="贝里斯">贝里斯</option>
+              <option value="澳大利亚">澳大利亚</option>
+              <option value="马来西亚">马来西亚</option>
+              <option value="其他国家/地区">其他国家/地区</option>
             </select>
             <img src="../src/assets/img/Triangle.png" alt="">
           </div>
@@ -677,7 +678,8 @@
         <div class="form-item">
           <span class="name"><span class="base-red">*</span> <span>联系方式：</span></span>
           <div class="select-wrap required">
-            <input name="universal-value-phone" maxlength="11" class="base-input" placeholder="用于接收核名结果" type="text">
+            <input name="universal-value-phone" maxlength="11" class="base-input" placeholder="用于接收海外公司注册费用"
+              type="text">
             <div class="error base-red">请输入正确的手机号码</div>
           </div>
         </div>
@@ -701,23 +703,24 @@
           <div class="select-wrap">
             <select id="oversea-select">
               <option value="">请选择</option>
-              <option value="1">美国</option>
-              <option value="2">英国</option>
-              <option value="3">新加坡</option>
-              <option value="4">日本</option>
-              <option value="5">德国</option>
-              <option value="6">开曼群岛</option>
-              <option value="7">BVI</option>
-              <option value="8">加拿大</option>
-              <option value="9">泰国</option>
-              <option value="10">马绍尔</option>
-              <option value="11">伯利兹</option>
-              <option value="12">萨摩亚</option>
-              <option value="13">塞舌尔</option>
-              <option value="14">贝里斯</option>
-              <option value="15">澳大利亚</option>
-              <option value="16">马来西亚</option>
-              <option value="0">其他国家、地区</option>
+              <option value="美国">美国</option>
+              <option value="英国">英国</option>
+              <option value="新加坡">新加坡</option>
+              <option value="日本">日本</option>
+              <option value="德国">德国</option>
+              <option value="法国">法国</option>
+              <option value="开曼群岛">开曼群岛</option>
+              <option value="BVI">BVI</option>
+              <option value="加拿大">加拿大</option>
+              <option value="泰国">泰国</option>
+              <option value="马绍尔">马绍尔</option>
+              <option value="伯利兹">伯利兹</option>
+              <option value="萨摩亚">萨摩亚</option>
+              <option value="塞舌尔">塞舌尔</option>
+              <option value="贝里斯">贝里斯</option>
+              <option value="澳大利亚">澳大利亚</option>
+              <option value="马来西亚">马来西亚</option>
+              <option value="其他国家/地区">其他国家/地区</option>
             </select>
             <img src="../src/assets/img/Triangle.png" alt="">
           </div>
@@ -725,13 +728,14 @@
         <div class="form-item comp-name">
           <span class="name">公司名称：</span>
           <div class="select-wrap">
-            <input name="free-charge-value" class="base-input" placeholder="请输入公司名称，如中细软" type="text">
+            <input name="oversea-comp-value" class="base-input" placeholder="请输入公司名称，如中细软" type="text">
           </div>
         </div>
         <div class="form-item">
           <span class="name"><span class="base-red">*</span> <span>联系方式：</span></span>
           <div class="select-wrap required">
-            <input name="oversea-value-phone" maxlength="11" class="base-input" placeholder="用于接收核名结果" type="text">
+            <input name="oversea-value-phone" maxlength="11" class="base-input oversea-input-hold"
+              placeholder="用于接收核名结果" type="text">
             <div class="error base-red">请输入正确的手机号码</div>
           </div>
         </div>
@@ -750,7 +754,7 @@
           <img src="../src/assets/img/success.png" alt="">
           <span>提交成功</span>
         </span><br>
-        <span class="pub-title">请完善信息，稍后会有涉外顾问电话告知结果</span>
+        <span class="pub-title">稍后会有专业顾问与您电话联系，请注意接听~</span>
       </div>
     </div>
   </div>
